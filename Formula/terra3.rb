@@ -5,21 +5,21 @@
 class Terra3 < Formula
   desc "A CLI to manage AWS deployments based on the Terra3 stack!"
   homepage "https://terra3.io/"
-  version "0.0.6"
+  version "0.0.7"
   license "Apache-2.0"
 
   on_macos do
     on_intel do
-      url "https://github.com/it-objects/terra3-cli/releases/download/v0.0.6/terra3_Darwin_amd64.tar.gz"
-      sha256 "63bdd6af9854479c7619afdff58a48799a97ee69d01e26bb16f82addbe0eb772"
+      url "https://github.com/it-objects/terra3-cli/releases/download/v0.0.7/terra3_Darwin_amd64.tar.gz"
+      sha256 "c2cc64afab6e215b513dfefe228b522162330bf12fad82b2a008bb7c5007afb1"
 
       def install
         bin.install "terra3"
       end
     end
     on_arm do
-      url "https://github.com/it-objects/terra3-cli/releases/download/v0.0.6/terra3_Darwin_arm64.tar.gz"
-      sha256 "b9e4d4d91aae4b703e63325189d9833f6909466531c7cd475f0af8ebbae0e3b9"
+      url "https://github.com/it-objects/terra3-cli/releases/download/v0.0.7/terra3_Darwin_arm64.tar.gz"
+      sha256 "23ce646b58f56ff04673def5919236ecc0dc50beb72c03251e8dbdc74e133128"
 
       def install
         bin.install "terra3"
@@ -30,8 +30,8 @@ class Terra3 < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/it-objects/terra3-cli/releases/download/v0.0.6/terra3_Linux_amd64.tar.gz"
-        sha256 "55e4d1009c9f455f2511e9abc175f674c066ab2653bf3771014444f16c006889"
+        url "https://github.com/it-objects/terra3-cli/releases/download/v0.0.7/terra3_Linux_amd64.tar.gz"
+        sha256 "60abe049673f866d6dfa0ba41595102bcf088f402c4cd6e658ed9af1a5d208b8"
 
         def install
           bin.install "terra3"
@@ -40,8 +40,8 @@ class Terra3 < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/it-objects/terra3-cli/releases/download/v0.0.6/terra3_Linux_arm64.tar.gz"
-        sha256 "43500c66db2c160ea5d47352aea9f9641a60ad3f77ea58a5aee5260bb3f0d986"
+        url "https://github.com/it-objects/terra3-cli/releases/download/v0.0.7/terra3_Linux_arm64.tar.gz"
+        sha256 "daa5398a16d3f477597b07be3721ffd53911a37c441500c8ca8b82682a6d4103"
 
         def install
           bin.install "terra3"
